@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BT1"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT2"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT3"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BT4"
+                android:layout_width="70dp"
+                android:layout_height="45pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT5"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT6"
+                android:layout_width="114dp"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BT7"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT8"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+
+            <Button
+                android:id="@+id/BT9"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="3pt"
+                android:background="@color/white"
+                android:onClick="BTselect" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
