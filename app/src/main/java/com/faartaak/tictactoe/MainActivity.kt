@@ -23,9 +23,9 @@ class MainActivity : AppCompatActivity() {
         var BTchoice = view as Button
         var CellID = 0
         when (BTchoice.id) {
-            R.id.BT1 -> CellID = 1
             R.id.BT2 -> CellID = 2
             R.id.BT3 -> CellID = 3
+            R.id.BT1 -> CellID = 1
             R.id.BT4 -> CellID = 4
             R.id.BT5 -> CellID = 5
             R.id.BT6 -> CellID = 6
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             winner = 1
 
         }
-        if (player1.contains(7) && player1.contains(8) && player1.contains(9)) {
+        if (player2.contains(7) && player1.contains(8) && player1.contains(9)) {
             winner = 2
 
         }
@@ -111,10 +111,34 @@ class MainActivity : AppCompatActivity() {
             winner = 1
 
         }
-        if (player1.contains(3) && player1.contains(6) && player1.contains(9)) {
+        if (player2.contains(3) && player1.contains(6) && player1.contains(9)) {
             winner = 2
 
         }
+
+        //cross1
+        if (player1.contains(1) && player1.contains(5) && player1.contains(9))
+        {
+            winner = 1
+        }
+        if (player2.contains(1) && player2.contains(5) && player2.contains(9))
+        {
+            winner = 2
+        }
+
+        //cross2
+        if (player1.contains(3) && player1.contains(5) && player1.contains(7))
+        {
+            winner = 1
+        }
+        if (player2.contains(3) && player2.contains(5) && player2.contains(7))
+        {
+            winner = 2
+        }
+
+
+
+
         if (winner != -1) {
             if (winner == 1) {
                 Toast.makeText(this, "Player 1 is the winner", Toast.LENGTH_SHORT).show()
